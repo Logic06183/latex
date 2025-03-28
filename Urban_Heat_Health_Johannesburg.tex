@@ -171,13 +171,14 @@
     
     \begin{center}
         \begin{tikzpicture}
-            \node[fill=witsaccent!20, text width=10cm, align=center, rounded corners, draw=witsaccent] {
+            \node[fill=witsaccent!20, text width=\textwidth-20pt, align=center, rounded corners=5pt, 
+                  draw=witsaccent, line width=1pt, inner sep=8pt] {
                 \textbf{\Large Urban heat is increasingly threatening public health in Johannesburg}
             };
         \end{tikzpicture}
     \end{center}
     
-    \vspace{0.5cm}
+    \vspace{0.3cm}
     \begin{columns}[T]
         \begin{column}{0.48\textwidth}
             \begin{infobox}[Human Impact]
@@ -199,7 +200,7 @@
         \end{column}
     \end{columns}
     
-    \vspace{0.5cm}
+    \vspace{0.3cm}
     \begin{keypoint}
         \centering
         \textbf{This research will transform how African cities understand and address heat vulnerability}
@@ -289,8 +290,8 @@
         \begin{column}{0.55\textwidth}
             \begin{impactbox}[By 2050 (High-Emissions Scenario)]
                 \begin{itemize}[leftmargin=*, itemsep=6pt]
-                    \item \statistic{\approx 2°C} warming
-                    \item Hot nights (>20°C) to \statistic{quadruple}
+                    \item \statistic{$\approx$ 2°C} warming
+                    \item Hot nights ($>$20°C) to \statistic{quadruple}
                     \item \statistic{3-4} additional weeks of very hot days
                 \end{itemize}
             \end{impactbox}
@@ -331,7 +332,7 @@
             
             \begin{tcolorbox}[colback=witsteal!10, colframe=witsteal, title=Temperature Disparities]
                 \begin{itemize}[leftmargin=*, itemsep=6pt]
-                    \item Townships \statistic{\approx 6°C} hotter than surrounding areas
+                    \item Townships \statistic{$\approx$ 6°C} hotter than surrounding areas
                     \item Indoor temperatures in informal settlements up to \statistic{15°C} higher than ambient
                     \item Extreme vulnerability for elderly and chronically ill
                 \end{itemize}
@@ -438,22 +439,25 @@
     
     \begin{center}
         \begin{tikzpicture}
-            \node[fill=witsdark, text=white, text width=10cm, align=center, rounded corners] {
+            \node[fill=witsdark, text=white, text width=\textwidth-40pt, align=center, rounded corners] {
                 \textbf{\Large Primary Aim}
             };
-            \node[fill=witslight, text width=10cm, align=center, rounded corners, below=0.2cm] {
+        \end{tikzpicture}
+        
+        \begin{tikzpicture}
+            \node[fill=witslight, text width=\textwidth-40pt, align=center, rounded corners] {
                 Understand spatially stratified heat-health interactions in Johannesburg and develop evidence-based approaches to mitigate heat-related health risks
             };
         \end{tikzpicture}
     \end{center}
     
-    \vspace{0.6cm}
+    \vspace{0.3cm}
     \textbf{\large Three Interconnected Objectives:}
     
     \begin{figure}
         \centering
-        \begin{tikzpicture}[node distance=1.8cm]
-            \node[draw, rounded corners, fill=witsteal!70, text=white, text width=10cm, align=center] (aim) {\textbf{Understanding Heat-Health Interactions in Johannesburg}};
+        \begin{tikzpicture}[node distance=1.2cm]
+            \node[draw, rounded corners, fill=witsteal!70, text=white, text width=7cm, align=center] (aim) {\textbf{Understanding Heat-Health Interactions}};
             
             \node[draw, rounded corners, below of=aim, fill=witsteal!20, text width=3cm, align=center] (obj1) {\textbf{1. Vulnerability Mapping}\\(Descriptive)};
             
@@ -465,9 +469,9 @@
             \draw[->, thick, witsteal] (obj1) -- (obj2);
             \draw[->, thick, witsteal] (obj2) -- (obj3);
             
-            \node[right=0.5cm of obj1, text width=5cm, align=left] {\textit{Where are the vulnerable populations?}};
-            \node[right=0.5cm of obj2, text width=5cm, align=left] {\textit{Why are they vulnerable?}};
-            \node[right=0.5cm of obj3, text width=5cm, align=left] {\textit{How will risks evolve?}};
+            \node[right=0.2cm of obj1, text width=4cm, align=left] {\footnotesize\textit{Where are the vulnerable populations?}};
+            \node[right=0.2cm of obj2, text width=4cm, align=left] {\footnotesize\textit{Why are they vulnerable?}};
+            \node[right=0.2cm of obj3, text width=4cm, align=left] {\footnotesize\textit{How will risks evolve?}};
         \end{tikzpicture}
     \end{figure}
 \end{frame}
@@ -489,6 +493,7 @@
                 \item Advanced spatial statistical analysis
             \end{itemize}
             
+            \vspace{-0.2cm} % Reduce space before the box to move it up
             \begin{impactbox}[Expected Outcomes]
                 \begin{itemize}[leftmargin=*, itemsep=6pt]
                     \item High-resolution vulnerability maps
@@ -508,37 +513,41 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Objective 2: Heat-Health Dynamics}
+    \frametitle{Objective 2: Heat-Health Dynamics Methodology}
     
     \begin{columns}[T]
         \begin{column}{0.55\textwidth}
-            \textbf{\large Key Activities:}
-            \begin{itemize}[leftmargin=*, itemsep=6pt]
-                \item Physiological mechanisms investigation:
-                \begin{itemize}[itemsep=4pt]
-                    \item \concept{Metabolic:} Glucose regulation, insulin sensitivity
-                    \item \concept{Renal:} Fluid and electrolyte balance
-                    \item \concept{Inflammatory:} Acute-phase proteins (CRP, IL-6)
-                \end{itemize}
-                \item Non-linear climate-health interactions
-                \item Time-lagged effects analysis
-                \item Multisystem impacts assessment
+            \textbf{\large Clinical-Computational Approach:}
+            \begin{itemize}[leftmargin=*, itemsep=3pt]
+                \item Validated mechanistic pathway modeling
+                \item Multi-system physiological analysis
+                \item Temporal dynamics analysis
             \end{itemize}
             
-            \begin{impactbox}[Expected Outcomes]
-                \begin{itemize}[leftmargin=*, itemsep=6pt]
-                    \item Identification of causal relationships
-                    \item Quantification of physiological thresholds
-                    \item Evidence for targeted interventions
-                    \item Determination of critical intervention points
-                \end{itemize}
-            \end{impactbox}
+            \textbf{Distributed Lag Model}
+            {\small $g[E(Y_t)] = \alpha + \sum_{l=0}^{L}f(x_{t-l}, l)$}
+            
+            \textbf{\large Machine Learning Approaches:}
+            \begin{itemize}[leftmargin=*, itemsep=3pt]
+                \item Random Forests for feature importance
+                \item XGBoost with SHAP values for explanation
+                \item LIME explanations for model interpretability
+            \end{itemize}
         \end{column}
         \begin{column}{0.42\textwidth}
             \begin{figure}
-                \includegraphics[width=\textwidth]{metabolic_pathway (1).png}
-                \caption{\small Key metabolic pathways affected by heat stress across multiple organ systems}
+                \includegraphics[width=\textwidth]{mechanisms-inflammatory.drawio (2).png}
+                \caption{\small Inflammatory pathways affected by heat stress}
             \end{figure}
+            
+            \vspace{-0.2cm}
+            \begin{impactbox}[Key Advantages]
+                \begin{itemize}[leftmargin=*, itemsep=2pt]
+                    \item Explainable AI approaches
+                    \item Identification of causal links
+                    \item Clinically actionable insights
+                \end{itemize}
+            \end{impactbox}
         \end{column}
     \end{columns}
 \end{frame}
@@ -549,17 +558,17 @@
     \begin{columns}[T]
         \begin{column}{0.55\textwidth}
             \textbf{\large Key Activities:}
-            \begin{itemize}[leftmargin=*, itemsep=6pt]
+            \begin{itemize}[leftmargin=*, itemsep=4pt]
                 \item Development of predictive frameworks for heat-related outcomes
                 \item Stratified predictions by:
-                \begin{itemize}[itemsep=4pt]
+                \begin{itemize}[itemsep=2pt]
                     \item Geographic location
                     \item Demographic characteristics
                     \item Housing conditions
                 \end{itemize}
                 \item Identification of risk conditions at specific temperature thresholds
                 \item Focus on vulnerable populations:
-                \begin{itemize}[itemsep=4pt]
+                \begin{itemize}[itemsep=2pt]
                     \item Elderly residents
                     \item People with pre-existing conditions
                     \item Those with limited adaptive capacity
@@ -568,7 +577,7 @@
         \end{column}
         \begin{column}{0.42\textwidth}
             \begin{impactbox}[Model Applications]
-                \begin{itemize}[leftmargin=*, itemsep=6pt]
+                \begin{itemize}[leftmargin=*, itemsep=3pt]
                     \item Early warning systems
                     \item Healthcare resource allocation
                     \item Heat action plan development
@@ -577,6 +586,7 @@
                 \end{itemize}
             \end{impactbox}
             
+            \vspace{-0.2cm}
             \begin{figure}
                 \includegraphics[width=\textwidth]{mechanisms-Renal.drawio (2).png}
                 \caption{\small Renal pathways affected by heat stress}
@@ -636,7 +646,7 @@
     \begin{columns}[T]
         \begin{column}{0.55\textwidth}
             \textbf{\large Analytical Approach:}
-            \begin{itemize}[leftmargin=*, itemsep=6pt]
+            \begin{itemize}[leftmargin=*, itemsep=3pt]
                 \item Principal Component Analysis for Heat Vulnerability Index
                 \item Geographically Weighted PCA for spatial non-stationarity
                 
@@ -655,8 +665,9 @@
                 \caption{\small Urban heat patterns showing correlation with socioeconomic variables}
             \end{figure}
             
+            \vspace{-0.2cm}
             \begin{infobox}[Privacy Protection]
-                \begin{itemize}[leftmargin=*, itemsep=4pt]
+                \begin{itemize}[leftmargin=*, itemsep=2pt]
                     \item Data aggregation by ward
                     \item Geographic masking
                     \item Statistical disclosure control
@@ -672,17 +683,17 @@
     \begin{columns}[T]
         \begin{column}{0.55\textwidth}
             \textbf{\large Clinical-Computational Approach:}
-            \begin{itemize}[leftmargin=*, itemsep=6pt]
+            \begin{itemize}[leftmargin=*, itemsep=3pt]
                 \item Validated mechanistic pathway modeling
                 \item Multi-system physiological analysis
                 \item Temporal dynamics analysis
             \end{itemize}
             
             \textbf{Distributed Lag Model}
-            $g[E(Y_t)] = \alpha + \sum_{l=0}^{L}f(x_{t-l}, l)$
+            {\small $g[E(Y_t)] = \alpha + \sum_{l=0}^{L}f(x_{t-l}, l)$}
             
             \textbf{\large Machine Learning Approaches:}
-            \begin{itemize}[leftmargin=*, itemsep=6pt]
+            \begin{itemize}[leftmargin=*, itemsep=3pt]
                 \item Random Forests for feature importance
                 \item XGBoost with SHAP values for explanation
                 \item LIME explanations for model interpretability
@@ -694,8 +705,9 @@
                 \caption{\small Inflammatory pathways affected by heat stress}
             \end{figure}
             
+            \vspace{-0.2cm}
             \begin{impactbox}[Key Advantages]
-                \begin{itemize}[leftmargin=*, itemsep=4pt]
+                \begin{itemize}[leftmargin=*, itemsep=2pt]
                     \item Explainable AI approaches
                     \item Identification of causal links
                     \item Clinically actionable insights
